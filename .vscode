@@ -1,33 +1,31 @@
 {
-    "editor.fontSize": 14,
-    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Fira code",
     "editor.fontLigatures": true,
+    "workbench.colorTheme": "After Dark",
+    "calva.evalOnSave": true,
+    "calva.lintOnSave": true,
+    "calva.paredit.defaultKeyMap": "strict",
+    "calva.fmt.newIndentEngine": true,
     "editor.snippetSuggestions": "top",
-    "emmet.includeLanguages": {
-      "javascript": "javascriptreact",
-      "vue-html": "html"
-    },
-    "emmet.showAbbreviationSuggestions": true,
-    "emmet.showExpandedAbbreviation": "always",
-    "emmet.triggerExpansionOnTab": true,
     "files.eol": "\n",
-    "html.format.indentInnerHtml": true,
-    "workbench.colorCustomizations": {
-        "editor.selectionBackground": "#bbbbbb69",
-        "editor.selectionHighlightBackground": "#66666671"
-    },
-    "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 0,
-    "trailing-spaces.trimOnSave": true,
     "workbench.iconTheme": "vscode-icons",
-    "breadcrumbs.enabled": false,
-    "better-comments.multilineComments": true,
-    "editor.tabSize": 2,
-    "prettier.eslintIntegration": true,
-    "editor.wordWrap": "on",
-    "python.jediEnabled": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "git.autofetch": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-hrml": "html"
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "constant.keyword.clojure"
+                ],
+                "settings": {
+                    "foreground": "#766eff"
+                }
+            }
+        ]
+    },
     "auto-rename-tag.activationOnLanguage": [
         "html",
         "xml",
@@ -35,8 +33,10 @@
         "javascript",
         "javascriptreact"
     ],
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-    "prettier.singleQuote": true,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
-  }
+    "clojureWarrior.commentFormStyle": {
+        "fontStyle": "italic"
+    },
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false
+}

@@ -1,0 +1,143 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+up",
+        "command": "paredit.sexpRangeExpansion",
+        "when": "calva:pareditValid && !panelFocus && !sideBarFocus && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-paredit.sexpRangeExpansion",
+        "when": "calva:pareditValid && !panelFocus && !sideBarFocus && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "alt+down",
+        "command": "paredit.sexpRangeContraction",
+        "when": "calva:pareditValid && !panelFocus && !sideBarFocus && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-paredit.sexpRangeContraction",
+        "when": "calva:pareditValid && !panelFocus && !sideBarFocus && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "shift+cmd+j",
+        "command": "paredit.barfSexpForward",
+        "when": "calva:pareditValid && !panelFocus && !sideBarFocus && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "-paredit.barfSexpForward",
+        "when": "calva:pareditValid && !panelFocus && !sideBarFocus && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "paredit.slurpSexpForward",
+        "when": "calva:pareditValid && !panelFocus && !sideBarFocus && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "-paredit.slurpSexpForward",
+        "when": "calva:pareditValid && !panelFocus && !sideBarFocus && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+b",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "shift+cmd+s",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "shift+cmd+w",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "cmd+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+right",
+        "command": "-editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+left",
+        "command": "-editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    }
+]
